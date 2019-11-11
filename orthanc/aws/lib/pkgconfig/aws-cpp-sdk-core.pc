@@ -1,0 +1,10 @@
+includedir=/app/install/share/orthanc/aws/include
+libdir=/app/install/share/orthanc/aws/lib
+
+Name: aws-cpp-sdk-core
+Description: Core http and utility library for the AWS C++ SDK
+Version: 1.7.222
+Cflags: -I${includedir} -fno-exceptions -std=c++11
+Libs: -L${libdir} -laws-cpp-sdk-core 
+Libs.private: -laws-c-event-stream -laws-checksums -laws-c-common -lpthread -lcurl -lcrypto -lssl -lz
+Requires: 

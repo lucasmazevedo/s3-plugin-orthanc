@@ -1,0 +1,10 @@
+includedir=/app/install/share/orthanc/aws/include
+libdir=/app/install/share/orthanc/aws/lib
+
+Name: testing-resources
+Description: Testing utility library for the AWS C++ SDK
+Version: 1.7.222
+Cflags: -I${includedir} -fno-exceptions -std=c++11
+Libs: -L${libdir} -ltesting-resources 
+Libs.private: 
+Requires:  aws-cpp-sdk-core
